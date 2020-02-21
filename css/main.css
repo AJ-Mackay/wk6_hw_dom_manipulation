@@ -1,7 +1,6 @@
 body {
   background-color: #000;
   color: #fff;
-  font-size:
 }
 
 h1 {
@@ -33,4 +32,5 @@ h1 {
   border-radius: 5%;
   background: #a234eb;
   color: #000;
+  text-align: center;
 }

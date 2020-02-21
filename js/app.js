@@ -3,20 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', handleFormSubmit);
 
   const button = document.createElement('button');
-  const body - document.querySelector('body');
+  const body = document.querySelector('body');
   body.appendChild(button);
   button.textContent = 'Clear List';
   button.addEventListener('click', handleButtonClick);
 });
 
-const handleFormSubmit = function (event) {
-  event.preventDefault();
+const handleButtonClick = function () {
+  const watchList = document.querySelector('ul');
+  watchList.innerHTML = '';
+}
 
+const handleFormSubmit = function () {
+  event.preventDefault();
   const newListItem = createWatchListItem(event.target);
   const list = document.querySelector('ul');
   list.appendChild(newListItem);
   event.target.reset();
-};
+}
 
 const createWatchListItem = function (form) {
   const watchListItem = document.createElement('li');
@@ -30,14 +34,9 @@ const createWatchListItem = function (form) {
   year.textContent = form.year.value;
   watchListItem.appendChild(year);
 
-  const rating = document.createElement('p');
-  rating.textContent = form.rating.value;
-  watchListItem.appendChild.(rating);
+  const rating = document.createElement('img');
+  rating.src = form.rating.value;
+  watchListItem.appendChild(rating);
 
   return watchListItem;
 }
-
-const handleButtonClick = function () {
-  const watchList = document.querySelector('ul');
-  watchList.innerHTML = '';
-};
