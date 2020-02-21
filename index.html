@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>DOM Manipulation</title>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+  <h1>Horror Movies To Watch</h1>
+  <form id="new-item-form">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="title">Title</label>
+        <input type="text" name="title" value="" required />
+      </div>
+
+      <div class="form-item">
+        <label for="rating">Rating</label>
+        <select id="rating">
+          <option value="PG">PG</option>
+          <option value="12">12</option>
+          <option value="12A" selected>12A</option>
+          <option value="15">15</option>
+          <option value="18">18</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <label for="year">Year</label>
+        <input type="text" name="year" value="" required />
+      </div>
+
+    </div>
+    <input type="submit" value="Add Film">
+  </form>
+
+  <h1>Watch List</h1>
+  <ul id="watch-list"></ul>
+</body>
+</html>

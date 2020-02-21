@@ -1,0 +1,36 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-size:
+}
+
+h1 {
+  font-family: fantasy;
+  color: red;
+  text-align: center;
+}
+
+#form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#watch-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.form-item {
+  margin-right: 1.8rem;
+}
+
+.watch-list-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #eb3434;
+  border-radius: 5%;
+  background: #a234eb;
+  color: #000;
+}
